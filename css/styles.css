@@ -59,3 +59,8 @@ h3 > a:hover{
     min-height: 300px;
     }
 
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
