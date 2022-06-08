@@ -33,7 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul> 
                 <span class="navbar-text">
-                     <a data-toggle="modal" data-target="#loginModal">
+                         <a id="loginBtn">
                          <span class="fa fa-sign-in"></span>Login
                      </a>
                 </span>  
@@ -90,7 +90,7 @@
                         <img src="img/logo.png" alt="" class="img-fluid">
                         
                             <div class="col-md-8">
-                                <button type="button" class="btn  btn-lg bg-warning col-10 mx-auto" data-toggle="modal" data-target="#exampleModal"> Reserve Table</button>
+                                <button type="button" class="btn  btn-lg bg-warning col-10 mx-auto " id="reserveBtn">Reserve Table</button>
                             </div>
                             
                         
@@ -361,6 +361,24 @@ $(document).ready(function(){
                 }
         });
     });
+      </script>
+    <!-- modal using javascript -->
+      <script>
+          let modal = document.getElementById("exampleModal");
+          let btn = document.getElementById("reserveBtn");
+  
+          btn.onclick = function() {
+           
+         $("#exampleModal").modal("show");
+           
+            }
+
+            let loginBtn = document.getElementById("loginBtn");
+            let loginModal = document.getElementById("loginModal");
+
+            loginBtn.onclick = function() {
+                $("#loginModal").modal("show");
+            }
       </script>
     
 </body>

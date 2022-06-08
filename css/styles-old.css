@@ -64,3 +64,17 @@ h3 > a:hover{
     position: absolute;
     bottom: 0px;
 }
+.modal-header{
+    background: #5230a0;
+    color:floralwhite;
+}
+.modal-title {
+    padding-left: 10px;
+}
+.btn-close{
+    color: floralwhite;
+    background-color: #5230a0;
+}
+.modal-body{
+    background: #D1C4E9;
+}
