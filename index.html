@@ -8,10 +8,12 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     
         <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
         <link rel="stylesheet" href="css/styles-old.css">
+        <!-- endbuild -->
      
         <title>Ristorante Con Fusion</title>
 </head>
@@ -336,50 +338,13 @@
         </div>
     </footer>
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <!--build:js js/main.js-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!--endbuild-->
 
-      <script>   
-
-
-$(document).ready(function(){
-        $('#mycarousel').carousel({ interval: 1000});
-        $("#mycarousel").click(function(){
-      
-        
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa fa-play');
-                    $("#carouselButton").children("span").addClass('fa fa-pause');                    
-                }
-        });
-    });
-      </script>
-    <!-- modal using javascript -->
-      <script>
-          let modal = document.getElementById("exampleModal");
-          let btn = document.getElementById("reserveBtn");
-  
-          btn.onclick = function() {
-           
-         $("#exampleModal").modal("show");
-           
-            }
-
-            let loginBtn = document.getElementById("loginBtn");
-            let loginModal = document.getElementById("loginModal");
-
-            loginBtn.onclick = function() {
-                $("#loginModal").modal("show");
-            }
-      </script>
     
 </body>
 
